@@ -1,1 +1,43 @@
+Kubernetes also known as K8s, an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation.
+This basically helps in runnign adn deploying the services that has the need to run 100's and 1000's of the containers on the cloud and helps in managing them in different environment like physical,local,cloud or even hybrid enviroenmt(Iot device adn edge device).
+
+It organises the containers that comprise an application into logical units to facilitate management and exploration. Kubernetes is based on Google's 15 years of experience operating production workloads, mixed with best-of-breed crowd ideas and activities.
+
+Kuerbenetes basically solves :
+
+The trend from monolithical architecture to the micrsoservices ,increase usage of the containers in this technolgy gave rise to the kuberentes which lead to the use the scripts to mamage the 100's of cotnaiers that we want to deploy.
+
+what features does orchestration tools offer?
+
+high Avaialblity and no down time
+Scalablity with the high performance and repsonse rate.
+Disaster recovery - Easy Backup and Restore.
+
+Kuberentes component explained:(main ones)
+
+A Pod is still driven by a Node. In Kubernetes, a Node is a worker computer that can be abstract or physical, depending on the cluster. The Master is in charge of each Node. A Node may have several pods, and the Kubernetes master manages pod scheduling through the cluster's Nodes automatically.
+
+pods are the smallest units of the K8's,which are used for the abstracton over the container.which can usally run ! application per pod.
+
+In kubernetes each contaier communicate with their own IP whcih is each pod has theour won virtual network,each pod gets its own ip address.(not a public ip address)
+
+Kubernetes clusters can die very easily ,they can replicate very easily adn they will will be replaced very easily.
+
+Service and Ingress in Kubernetes
+
+thus the above problem lead for the restart of the pods and a new IP needs to be run every given point of time thus this wwas so hectic thus helping in having laucnhing a service and having a permanent IP addres,irrepective of the lifecycle fo the pod and service not connected.
+
+
+thus when we want to run it on our hardware ann see the performance through the web browser thus launching a external service is goin to be very helpful.
+
+
+Our regular External service URl will be =http://my-app-service=ip:port=
+
+but generally on the local machien we have the external service IP address will be =http://[node-IP-Address]:[port]=
+
+thus all these might offer a developer a security issue thus =Ingress= is one such component which gives rise to an URL,which can be used instead of IP and Ports.
+Ingress will be a sercure patch for the services in the kubernetes,where requrest is process first and then the communication with the services happen.
+
+=ConfigMap and Secretes=
+thus there will be an external application where the pods communicate
 
