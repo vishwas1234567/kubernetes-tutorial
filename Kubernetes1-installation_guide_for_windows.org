@@ -1,1 +1,37 @@
+Initally go to linux and install Docker for windows and install the other dependcies that it asks for.
 
+Then folow these steps for the installation
+
+Before the installation, I would ask you all to go and install choco on windowsv thus you can go to the link that I have given here and install the choclety for the ewse of installing the kuberentes.
+https://www.youtube.com/watch?v=7Cp2LS9eE3c : this si the link for the video.
+
+Step 1:
+choco install kubernetes-cli
+
+
+Step 2:  
+choco install minikube
+
+
+Step 3: create a hyper visor )this is the tricky step thus stay awak when you are doig this)
+
+Go type hyper V on your windows start bar and create a virutal switch  and do the network setting for the others to use the interent connection nd you are good to go now.
+Step 4:(run tgis command to get the know everything is working)
+kubectl version --client
+
+
+Step 5:(start a minikube cluster and then you can also type the command said in step 7
+=MAKE SURE TO EDIT VERSION AND NAME OF VIRUAL SWITCH YOU USE= 
+minikube start --kubernetes-version="v1.18.0" --vm-driver="hyperv" --hyperv-virtual-switch="Minikube"
+
+Step 6:
+kubectl get pods 
+will also be a command that you can work on with
+Step7 
+kubectl get node
+
+Step 8:
+minikube stop (this stopd the minikube node)
+
+
+thus follow these steps and you will have the kubernetes hot and running.
