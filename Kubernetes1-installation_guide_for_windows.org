@@ -1,4 +1,4 @@
-Initally go to linux and install Docker for windows and install the other dependcies that it asks for.
+Initally go and install Docker for windows and install the other dependcies that it asks for.
 
 Then folow these steps for the installation
 
@@ -35,3 +35,6 @@ minikube stop (this stopd the minikube node)
 
 
 thus follow these steps and you will have the kubernetes hot and running.
+
+
+also some link will be proc=vided here.
