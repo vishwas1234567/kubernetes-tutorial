@@ -38,3 +38,17 @@ thus follow these steps and you will have the kubernetes hot and running.
 
 
 also some link will be proc=vided here.
+
+
+
+
+
+#+BEGIN_SRC sh
+kubectl create deployment nginx-webapp2 --image=vishwa787/webapp-2 --dry-run=client -o yaml > nginx-webapp2.yaml
+#+END_SRC
+
+Test the deploymeny in K8s
+=kubectl apply -f nginx-webapp1.yaml=
+
+Create a service for accessing the webapp
+=kubectl create service nodeport nginx-webapp2-service --tcp=5679:80 --dry-run=client -o yaml=
